@@ -1,0 +1,15 @@
+.table{
+    background-color: rgb(241, 154, 41);
+    color: white;
+    border: white;
+}
+
+.clase{
+        background-color: yellow;
+    }
+.vacio{
+        background-color: transparent;
+    }
+body{
+    background-color: yellowgreen;
+}

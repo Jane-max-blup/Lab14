@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Document</title>
+</head>
+<body>  
+    <!--EJERCICIO 1-->
+    <h2>Ejercicio 1</h2>
+    <script>
+       var Parrafo1 = $("<p>");
+        Parrafo1.text("Estes el parrafo 1(dale click): Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt culpa nam excepturi nisi, inventore officiis atque a,");
+        Parrafo1.addClass("parrafo1");
+        // append prepend after
+        $("body").append(Parrafo1);
+
+        $(document).ready(function(){
+	$(Parrafo1).click(function(){
+		alert("¡Alerta del primer párrafo!");
+	});
+});
+       var Parrafo2 = $("<p>");
+        Parrafo2.text("Estes el parrafo 2 (dale click): recusandae illum porro modi odio mollitia, accusamus laborum consequuntur hic quos est nostrum!");
+        Parrafo2.addClass("parrafo1");
+        // append prepend after
+        $("body").append(Parrafo2);
+
+        $(document).ready(function(){
+	$(Parrafo2).click(function(){
+		alert("¡Cuidado es el segundo parrafo!, disculpa no hay peligro, falsa alarma. ");
+	});
+});
+
+    </script>
+    <!--EJERCICIO 2-->
+    <div class="container">
+        <div class="row">
+            <h2>Ejercicio 2</h2>
+            <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+            <p><strong>Sus juegos favoritos:</strong><br>
+                <span class="clase" >Deadmaze</span>, Street Fighter, <span class="clase">Among Us</span>, Half Life, Counter Strike, Transformice, <span class="clase">Krunker</span> 
+            </p>
+        </div>
+        <button type="button" id="boton2">  
+            Change   
+            </button> 
+            <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    </div>
+    <script>
+ $('#boton2').on('click', function(){         
+                $("span").removeClass("clase")
+                .addClass("clase2"); 
+           });
+
+           $(document).ready(function(event){
+	    $(".button1").click(function(){
+        $(".button1").text("-");
+    }); 
+});
+    </script>
+<!--EJERCICIO 3-->
+<div class="container py-5">
+    <div class="row">
+        <h2>Ejercicio 3</h2>
+      <table class="text-center ">
+        <tr class="table">
+            <td class="button1">Casillero 1</td>
+            <td class="button1">Casillero 2</td>
+            <td class="button1">Casillero 3 </td>
+        </tr>
+        <tr class="table">
+            <td class="button2"> Casillero 4</td>
+            <td class="button"> Casillero 5</td>
+            <td class="button"> Casillero 6</td>
+        </tr>
+        <tr class="table">
+            <td class="button3">Casillero 7</td>
+            <td class="button3">Casillero 8 </td>
+            <td class="button3">Casillero 9 </td>
+        </tr>
+      </table>
+    </div>
+</div>
+    <script>
+$(document).ready(function(event){
+    $(".button1").click(function(){ 
+        $(".button1").text("-");
+    }); 
+});
+    </script>
+</body>
+</html>
